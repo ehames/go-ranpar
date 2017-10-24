@@ -25,8 +25,6 @@ func generateCoefficients(n int) []int {
 
 	splits := int(math.Floor(math.Log2(float64(n))))
 
-	fmt.Printf("n = %d splits = %d\n", n, splits)
-
 	coefficients := make(map[int]struct{}, splits)
 
 	for i := 0; i < splits; i++ {
@@ -49,7 +47,6 @@ func calculatePartition(n int, coefficients []int) []int {
 	}
 	partition[len(coefficients)] = n - coefficients[len(coefficients)-1]
 
-	fmt.Printf("partitions = %v\n", partition)
 	return partition
 }
 

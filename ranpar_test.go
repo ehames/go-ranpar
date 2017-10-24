@@ -13,7 +13,7 @@ func arraySum(s []int) int {
 
 func TestRanPar(t *testing.T) {
 	examples := []int{
-		0, 1, 2, 3, 4, 1023, 1024, 1025, 1048576,
+		0, 1, 2, 3, 4, 1023, 1024, 1025, 1048575, 1048576, 1048577,
 	}
 
 	for _, example := range examples {
