@@ -2,8 +2,8 @@ package ranpar
 
 import "testing"
 
-func arraySum(s []int64) int64 {
-	sum := int64(0)
+func arraySum(s []int) int {
+	sum := 0
 	for _, e := range s {
 		sum += e
 	}
@@ -12,8 +12,8 @@ func arraySum(s []int64) int64 {
 }
 
 func TestRanPar(t *testing.T) {
-	examples := []int64{
-		0, 1, 2, 10, 101,
+	examples := []int{
+		0, 1, 2, 3, 4, 1023, 1024, 1025, 1048576,
 	}
 
 	for _, example := range examples {
